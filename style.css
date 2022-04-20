@@ -1,18 +1,50 @@
+p {
+    font-family: Helvetica;
+}
 
-    .classy-text{
-        color: green;
-    }
+#img {
+    width: 300px;
+    text-align: center;
+    background-color: aquamarine;
+}
 
-    #id-text{
-        color: red;
-	}
+.center {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: Helvetica;
+}
 
+.center_img {
+    text-align: center;
+}
 
-	.italic-text {
-		font-style: italic;
-	}
+.input_class {
+    width: 100%;
+    font-size: 12px;
+}   
 
+.nav_bar {
+    width: 15%;
+    height: 100%;
+    background: rgb(8, 61, 221);
+    position: fixed;
+    top: 0;
+}
 
-    .classier-text{
-        color: turquoise;
-    }
+.nav_bar > .element {
+    width: 100%;
+    line-height: 50px;
+    padding: 25px 0 25px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* for the github, linkedin links */
+.nav_bar > .bottom_element {
+
+}
