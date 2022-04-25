@@ -2,6 +2,12 @@ p {
     font-family: Helvetica;
 }
 
+.main {
+    width: 85%;
+    margin-left: 15%;
+}
+
+
 #img {
     width: 300px;
     text-align: center;
@@ -19,15 +25,23 @@ p {
     text-align: center;
 }
 
+.section {
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: 650;
+    font-style: inherit;
+}
+
 .input_class {
     width: 100%;
     font-size: 12px;
 }   
 
 .nav_bar {
-    width: 15%;
+    width: 12.5%;
     height: 100%;
-    background: rgb(8, 61, 221);
+    background: rgb(24, 135, 115);
     position: fixed;
     top: 0;
 }
@@ -44,6 +58,12 @@ p {
     text-decoration: none;
     font-size: 14px;
 }
+
+.nav_bar > .element:hover {
+     width: 110%;
+     background-color: lightseagreen;
+}
+
 /* for the github, linkedin links */
 .nav_bar > .bottom_element {
 
