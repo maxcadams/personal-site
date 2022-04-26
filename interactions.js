@@ -1,6 +1,6 @@
 // nav bar stuff
-$(".element").hover( function() {
-    $(this).animate({width: "200px"}, 5000); } );
+//$(".element").hover( function() {
+//    $(this).animate({width: "200px"}, 5000); } );
 $("#home").click (function() {
     window.location.href = "index.html";
 })
