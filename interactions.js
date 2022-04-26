@@ -19,6 +19,6 @@ $("#coursework").click (function () {
 
 $("#deez").click (function () {
     window.location.href = "https://github.com/maxcadams";
-})
+}) 
 
 
