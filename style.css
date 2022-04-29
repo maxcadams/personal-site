@@ -67,7 +67,7 @@ p {
 }
 
 .section_header {
-    margin-top: 10%;
+    margin-top: 7%;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -82,5 +82,44 @@ p {
     margin-top: 1%;
     margin-left: 37.5%;
     align-self: center;
+    margin-bottom: 3.5%; 
 } 
+
+table {
+    border-collapse: collapse;
+    width: 93%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    color: #424242;
+}
+
+td {
+    font-weight: lighter;
+}
+
+th {
+        color: rgb(32, 31, 31);
+        background-color: #e8e5e5;
+        font-weight: bolder;
+}
+
+tr {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1eeee;
+}
+
+.table-header {
+    border: 5px #e8e5e5 solid;
+}
 
