@@ -3,9 +3,23 @@ p {
     text-align: center;
 }
 
+body, html {
+    margin: 0;
+    height: 100%;
+    background-color: rgb(229, 237, 234);
+}
+
 .main {
     width: 80%;
     margin-left: 15%;
+    display: inline-block;
+    opacity: 80%;
+}
+
+.intro {
+    width: 80%;
+    margin-left: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 
@@ -46,6 +60,8 @@ p {
     position: fixed;
     top: 0;
     margin-left: -0.75%;
+    margin-right: 0;
+    display: inline-block;
 }
 
 .nav_bar > .element {
@@ -62,12 +78,11 @@ p {
 }
 
 .nav_bar > .element:hover {
-     width: 110%;
      background-color: lightseagreen;
 }
 
 .section_header {
-    margin-top: 7%;
+    margin-top: 4%;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -85,13 +100,55 @@ p {
     margin-bottom: 3.5%; 
 } 
 
+/* for project section */
+
+.proj {
+    margin-left: 4.7%;
+    width: 100%;
+}
+
+.proj-container {
+    width: 27%;
+    height: 100%;
+    background:rgb(156, 218, 206);
+    position: sticky;
+    margin-bottom: 3.5%;
+    display: inline-block;
+    margin-right: 1%;
+    border: 10px rgb(156, 218, 206) solid;
+}
+
+
+.proj-des {
+    width: 100%;
+    height: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.proj-img {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 5px;
+    background-size: cover;
+
+}
+
+.proj-img:hover {
+    opacity: 60%;
+}
+
+
+
+/* Table stuff */
 table {
     border-collapse: collapse;
     width: 93%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 14px;
-	line-height: 20px;
-	margin-bottom: 10px;
+	line-height: 30px;
+    margin-top: 5%;
+    
 }
 
 th, td {
@@ -122,4 +179,20 @@ tr:nth-child(even) {
 .table-header {
     border: 5px #e8e5e5 solid;
 }
+
+
+/* parallax */
+
+.parallax-img {
+    position: relative;
+    opacity: 0.75;
+    width: 88.25%;
+    margin-left: 11.75%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
 
