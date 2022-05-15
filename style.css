@@ -138,6 +138,14 @@ body, html {
     opacity: 60%;
 }
 
+.searchbar {
+    width: 50%;
+    height: 35px;
+    margin-left: 25%;
+    line-height: 35px;
+    font-size: 18px;
+    text-indent: 10px;
+}
 
 
 /* Table stuff */
