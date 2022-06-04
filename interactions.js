@@ -34,4 +34,16 @@ $("#soundboard").click (function () {
     window.open ("https://github.com/maxcadams/SoundBoard", "_blank");
 })
 
+$("#pressy").click (function() {
+    let weatherContainer = document.getElementById('weather');
+    let input = document.getElementById('bar').value;
+    let lastElem = weatherContainer.lastChild;
+    if(lastElem.nodeName === 'SECTION_HEADER'){
+        weatherContainer.removeChild(lastElem);
+    }
+    weatherapi(input);
+    $('#form')[0].reset();
+
+})
+
 

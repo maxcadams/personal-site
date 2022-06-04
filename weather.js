@@ -1,6 +1,40 @@
 /*      Weather API and search bar     */
 
-fetch('https://www.metaweather.com/api/location/search/?query=london', {
-    //mode: 'no-cors'
-}).then(res => console.log(res))
-  .catch(error => console.log('ERROR'))
+/* Process data 
+ * Input: JSON file from weatherapi.com
+ * Outputs data onto HTML doc
+ */
+function procData(data) {
+
+    var city = data['location']['name'];
+    var country = data['location']['country'];
+
+    /*for (const key in data) {
+        console.log(key);
+    }*/
+    var mainContainer = document.getElementById('weather');
+    var div = document.createElement('section_header');
+    div.id = 'recent';
+    div.innerHTML = 'City: ' + city + ' ' + 'Country: ' + country + '\n';
+    mainContainer.appendChild(div);
+}
+
+function locationNotFound () {
+    var mainContainer = document.getElementById('weather');
+    var div = document.createElement('section_header');
+    div.innerHTML = 'Location not Found\n';
+    div.id = 'recent';
+    mainContainer.appendChild(div);
+}
+
+
+function weatherapi(city) {
+    fetch('https://api.weatherapi.com/v1/forecast.json?key=5d455582fdc545e39ae180540221505&q='.concat(city), {
+        //mode: 'no-cors'
+    }).then(res => {
+        return res.json()
+    })
+        .then(data => procData(data))
+        .catch(error => locationNotFound())
+}
+

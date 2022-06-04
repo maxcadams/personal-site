@@ -6,7 +6,7 @@ p {
 body, html {
     margin: 0;
     height: 100%;
-    background-color: rgb(229, 237, 234);
+    background-color: none;
 }
 
 .main {
@@ -14,6 +14,7 @@ body, html {
     margin-left: 15%;
     display: inline-block;
     opacity: 80%;
+    background-color: rgb(255, 255, 255);
 }
 
 .intro {
@@ -40,13 +41,7 @@ body, html {
     text-align: center;
 }
 
-.section {
-    text-align: center;
-    font-size: 25px;
-    font-family: Verdana;
-    font-weight: 650;
-    font-style: inherit;
-}
+
 
 .input_class {
     width: 100%;
@@ -79,6 +74,14 @@ body, html {
 
 .nav_bar > .element:hover {
      background-color: lightseagreen;
+}
+
+.section {
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: 650;
+    font-style: inherit;
 }
 
 .section_header {
