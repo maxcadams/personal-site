@@ -1,27 +1,27 @@
 /*      Weather API and search bar     */
 
-/* Process data 
+/* Process data
  * Input: JSON file from weatherapi.com
  * Outputs data onto HTML doc
  */
 function procData(data) {
 
-    var city = data['location']['name'];
-    var country = data['location']['country'];
+    let city = data['location']['name'];
+    let country = data['location']['country'];
 
     /*for (const key in data) {
         console.log(key);
     }*/
-    var mainContainer = document.getElementById('weather');
-    var div = document.createElement('section_header');
+    let mainContainer = document.getElementById('weather');
+    let div = document.createElement('section_header');
     div.id = 'recent';
     div.innerHTML = 'City: ' + city + ' ' + 'Country: ' + country + '\n';
     mainContainer.appendChild(div);
 }
 
 function locationNotFound () {
-    var mainContainer = document.getElementById('weather');
-    var div = document.createElement('section_header');
+    let mainContainer = document.getElementById('weather');
+    let div = document.createElement('section_header');
     div.innerHTML = 'Location not Found\n';
     div.id = 'recent';
     mainContainer.appendChild(div);

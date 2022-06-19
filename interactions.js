@@ -19,7 +19,7 @@ $("#coursework").click (function () {
 
 $("#Github").click (function () {
     window.open ("https://github.com/maxcadams", "_blank");
-}) 
+})
 
 $("#LinkedIn").click (function () {
     window.open ("https://www.linkedin.com/in/maximilian-adams-3b20871b4/", "_blank");
