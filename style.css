@@ -12,6 +12,7 @@ body, html {
     margin: -5px 0 0 0;
     border-radius: 30px;
     background-color: rgb(210, 254, 255);
+    position: sticky;
 }
 
 .intro {
@@ -38,11 +39,13 @@ body, html {
 .center {
     width: 50%;
     margin: 25% 25% 0 25%;
-    color:rgb(210, 254, 255);
+    color:rgb(6, 19, 19);
+    background-color: #e8e5e5;
     text-align: center;
     font-family: Helvetica;
     position: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 0;
 }
 
 .center_img {
