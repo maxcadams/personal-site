@@ -2,17 +2,22 @@
 body, html {
     margin: 0;
     height: 100%;
-    /* background-color: rgb(124, 124, 124); */
-    background-image: url(site-images/blur.jpg);
+    background-color: rgb(124, 124, 124);
+    /* background-image: url(site-images/blur.jpg); */
+}
+
+h1 {
+    font-family: 'Hknova-Regular', sans-serif;
 }
 
 .main {
     width: 100%;
     display: inline-block;
-    margin: -5px 0 0 0;
+    margin: -4px 0 0 0;
     border-radius: 30px;
-    background-color: rgb(210, 254, 255);
+    background-color: rgb(113, 198, 199);
     position: sticky;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .intro {
@@ -33,7 +38,7 @@ body, html {
     text-align: center;
     height: 20%;
     color: #424242;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Nova', sans-serif;
 }
 
 .center {
@@ -78,12 +83,11 @@ body, html {
     padding: 25px 0 25px 0px;
     text-align: center;
     margin: 0;
-    color: #ffffff;
+    color: #ebebeb;
     display: inline-block;
+    font-family: 'Nova', sans-serif;
     position: sticky;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .nav-bar > .element:hover {
@@ -120,6 +124,17 @@ body, html {
     align-self: center;
     margin-bottom: 3.5%; 
 } 
+
+#lil-guy {
+    height: 3rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -10px;
+    border-radius: 100px;
+    background-color: #e8e5e5;
+    text-align: center;
+    border: #424242;
+}
 
 /* for project section */
 
